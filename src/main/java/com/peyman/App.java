@@ -1,69 +1,44 @@
 package com.peyman;
 
-import com.peyman.model.Person;
-import com.peyman.util.algorithm.CalcData;
+import com.peyman.data.CalcData;
+import com.peyman.data.Person;
+import com.sun.deploy.perf.PerfRollup;
 
-import java.io.PrintWriter;
-import java.lang.Integer;
-import java.util.Scanner;
+import java.lang.reflect.Method;
 
-/**
- * Hello world!
- */
 public class App {
+
+    static {
+        System.out.println("");
+    }
+
     public static void main(String[] args) {
-
-        System.out.println("Hello World!");
-        //TODO: check later
-
-//        String str = "hi this is dummy55 and 1st thing is last thing5";
-
-        //variable
-        int data = 3;
-        double data2 = 4.5;
+        System.out.println(Person.MAX_AGE);
+        Person.getMaxAge();
+        System.out.print("");
+        Person p = new Person("","");
 
 
-        //wrapper types
-        //
+        int i = Integer.parseInt("123");
 
-        String str = new String("ali");
-        String str2 = new String("ali");
+         Character.isDigit('2');
 
 
-        int i = 5; //AutoBoxing --> only on wrapper types
+         Class x =  Person.class;  //Reflection
 
 
+        f("123");
+        f(12);
 
-        Integer i2 = 5;
-
-        //
+    }
 
 
-        Float data3 = 3.5f;
-        i++; //autoboxing
-
-        if(i>10){
+    public static void f(Object s){
+        Class c = s.getClass();
+        System.out.println(c.getName());
+        Method[] methods =  c.getMethods();
+        for (Method method:methods) {
 
         }
-
-        String str3 = str + str2;
-
-
-        char c = str.charAt(2);
-
-
-
-        Scanner scan = new Scanner(System.in);
-        int input =  scan.nextInt(); // "\n"
-        System.out.println(scan.nextLine());
-
-//        Person p = new Person();
-//        p.name = new String("ali");
-//        p.age = 12;
-//        p.setSportStatus(true);
-//        System.out.println(p.sportStatus);
-
-
-
     }
 }
