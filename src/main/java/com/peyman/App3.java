@@ -38,7 +38,7 @@ public class App3 {
         frame.setLayout(new FlowLayout());
         JButton btn = new JButton("OK");
         btn.addActionListener(new MyActionListener());
-        frame.ad;
+
 
 
 
