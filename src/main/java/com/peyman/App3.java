@@ -4,6 +4,8 @@ import com.peyman.inheritance.*;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class App3 {
 
@@ -39,6 +41,32 @@ public class App3 {
         JButton btn = new JButton("OK");
         btn.addActionListener(new MyActionListener());
 
+        JButton btn2 = new JButton("NOK");
+        ActionListener a =  e -> System.out.println("Bye");
+        btn.addActionListener( a );
+
+
+        IAnimal x = new IAnimal() {
+            @Override
+            public void voice() {
+                System.out.println("Dummy");
+            }
+        };
+        x.voice();
+
+        Domestic d = new Domestic() {
+            @Override
+            public int getPrize() {
+                return 230;
+            }
+
+            @Override
+            public String tellYourName() {
+                return null;
+            }
+        };
+
+        int res = d.getPrize();
 
 
 
