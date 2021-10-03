@@ -2,7 +2,10 @@ package com.peyman.model;
 
 //encapsulation
 
-public class Person {
+import com.peyman.inheritance.Domestic;
+import com.peyman.innerclass.Student;
+
+public class Person implements Comparable<Person>  {
 
 
     private boolean sportStatus;
@@ -65,5 +68,16 @@ public class Person {
     }
 
 
+    @Override
+    public int compareTo(Person o) {
+//        if(this.age > o.age) return 10;
+//        else if(this.age < o.age) return  -15;
+//        else return 0;
+        return this.age - o.age;
+    }
 
+    @Override
+    public String toString() {
+        return String.format("[ %s %s]", name, family);
+    }
 }
