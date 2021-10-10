@@ -48,7 +48,7 @@ public class App7 {
 
 
         ArrayList<String> list = new ArrayList<>();
-        list.
+//        list.
 
 
 

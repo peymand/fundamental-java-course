@@ -1,8 +1,6 @@
 package com.peyman;
 
-import com.peyman.data.CalcData;
 import com.peyman.data.Person;
-import com.sun.deploy.perf.PerfRollup;
 
 import java.lang.reflect.Method;
 

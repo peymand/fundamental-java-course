@@ -41,7 +41,7 @@
           <configuration>
             <archive>
               <manifest>
-                <mainClass>com.peyman.App</mainClass>
+                <mainClass>com.peyman.App8</mainClass>
               </manifest>
             </archive>
           </configuration>

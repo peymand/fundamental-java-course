@@ -18,7 +18,7 @@ public class GenericClass {
         return arr[0];
     }
 
-    public static <T extends Comparable<? extends T>> T max(T t1, T t2, T t3){
+    public static <T extends Comparable<T>> T max(T t1, T t2, T t3){
         T max = t1;
         if(t2.compareTo(max) > 0){
             max = t2;
