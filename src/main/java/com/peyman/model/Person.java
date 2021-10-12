@@ -62,9 +62,11 @@ public class Person implements Comparable<Person>  {
 
 
     public void setName(String name){
+        this.notifyAll();
         this.name = name;
     }
-    public String getName(){
+    public synchronized String getName() throws InterruptedException {
+        this.wait();
         return this.name;
     }
 
