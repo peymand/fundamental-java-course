@@ -64,6 +64,8 @@ public class App3 {
             public String tellYourName() {
                 return null;
             }
+
+
         };
 
         int res = d.getPrize();

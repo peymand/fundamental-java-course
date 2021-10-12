@@ -52,6 +52,7 @@ public class Person implements Comparable<Person>  {
     }
 
     public void setAge(int age) {
+        notify();
         this.age = age;
     }
 
