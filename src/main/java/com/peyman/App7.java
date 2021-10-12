@@ -44,7 +44,7 @@ public class App7 {
 
         Person[] people = {p1,p2,p3};
 
-        Arrays.sort(people ,(a,b) -> a.getName().length() - b.getName().length() );
+//        Arrays.sort(people ,(a,b) -> a.getName().length() - b.getName().length() );
 
 
         ArrayList<String> list = new ArrayList<>();

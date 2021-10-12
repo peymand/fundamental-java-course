@@ -2,7 +2,9 @@ package com.peyman.data;
 
 //encapsulation
 
-public class Person {
+import java.io.Serializable;
+
+public class Person implements Serializable {
 
 
     boolean sportStatus;
@@ -64,6 +66,7 @@ public class Person {
     }
 
     public int getAge() {
+        System.out.println(this.age);
         return age;
     }
 
@@ -84,7 +87,8 @@ public class Person {
     }
 
 
-
-
-
+    @Override
+    public String toString() {
+        return this.getName();
+    }
 }
